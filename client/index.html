@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS:GO/CS2 Radar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="radar-container">
+    <div id="radar-controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">-</button>
+      <button id="toggle-view">Toggle View</button>
+      <div>
+        <label for="x-min">X Min:</label>
+        <input type="number" id="x-min" step="100">
+        <label for="x-max">X Max:</label>
+        <input type="number" id="x-max" step="100">
+      </div>
+      <div>
+        <label for="y-min">Y Min:</label>
+        <input type="number" id="y-min" step="100">
+        <label for="y-max">Y Max:</label>
+        <input type="number" id="y-max" step="100">
+      </div>
+      <button id="apply-bounds">Apply</button>
+      <button id="reset-bounds">Reset Bounds</button>
+    </div>
+    <div id="radar-wrapper">
+      <canvas id="radar"></canvas>
+    </div>
+    <div id="map-info">
+      <div id="map-name"></div>
+      <div id="round-info"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"></script>
+  <script src="radar.js"></script>
+</body>
+</html>

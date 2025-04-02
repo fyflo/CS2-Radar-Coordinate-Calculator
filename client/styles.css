@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  #radar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #radar-wrapper {
+    position: relative;
+    margin: 20px 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #radar {
+    background-color: #000;
+  }
+  
+  #radar-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  #map-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+  }
+  
+  #map-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .preview #radar-wrapper {
+    width: 600px;
+    height: 600px;
+  }
+  
+  .player-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .player-dot.ct {
+    background-color: #5d79ae;
+  }
+  
+  .player-dot.t {
+    background-color: #de9b35;
+  }
