@@ -3,7 +3,7 @@
 
 1. Install Node.js
 2. gamestate_integration_fhud.cfg Place SteamLibrary\steamapps\common\Counter-Strike Global Offensive\ game \csgo\cfg\ gamestate_integration_fhud.cfg needs to be placed in cfg folder in CS2 location
-3. Start start_server.bat
+3. Start start_server.bat It will open automatically in the browser.
 4. Launch CS2 and enable the game demo
 
 Then just turn off automatic adjustment of map sizes.
